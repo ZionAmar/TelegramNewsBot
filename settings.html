@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update Settings</title>
+</head>
+<body>
+  <h1>Update Settings</h1>
+  <form action="/update-settings" method="POST">
+    <label for="botToken">Bot Token:</label><br>
+    <input type="text" id="botToken" name="botToken" required><br><br>
+
+    <label for="chatId">Chat ID:</label><br>
+    <input type="text" id="chatId" name="chatId" required><br><br>
+
+    <h3>Channel 1</h3>
+    <label for="channel1Url">Channel 1 URL:</label><br>
+    <input type="text" id="channel1Url" name="channel1Url" required><br>
+    <label for="channel1Name">Channel 1 Name:</label><br>
+    <input type="text" id="channel1Name" name="channel1Name" required><br><br>
+
+    <h3>Channel 2</h3>
+    <label for="channel2Url">Channel 2 URL:</label><br>
+    <input type="text" id="channel2Url" name="channel2Url" required><br>
+    <label for="channel2Name">Channel 2 Name:</label><br>
+    <input type="text" id="channel2Name" name="channel2Name" required><br><br>
+
+    <h3>Channel 3</h3>
+    <label for="channel3Url">Channel 3 URL:</label><br>
+    <input type="text" id="channel3Url" name="channel3Url" required><br>
+    <label for="channel3Name">Channel 3 Name:</label><br>
+    <input type="text" id="channel3Name" name="channel3Name" required><br><br>
+
+    <label for="checkInterval">Check Interval (minutes):</label><br>
+    <input type="number" id="checkInterval" name="checkInterval" min="1" required><br><br>
+
+    <input type="submit" value="Update Settings">
+  </form>
+</body>
+</html>
