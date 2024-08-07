@@ -34,7 +34,7 @@ export const fetchLatestMessage = async (channel) => {
     const messageId = $(element).attr("data-id");
     const sanitizedText = sanitizeTextForHTML(messageText);
     const firstFiveWords = getFirstFiveWords(sanitizedText);
-    const messageKey = `${firstFiveWords}-${channel.name}`;
+    const messageKey = `${firstFiveWords}`;
 
     console.log('Fetched message:', {
       id: messageId,
